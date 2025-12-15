@@ -13,6 +13,36 @@
   font-style: normal;
 }
 
+/* 1. Standard CSS font loading */
+@font-face {
+  font-family: "desfont";
+  src: url('./Fonts/Futura-PT-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "headerfont";
+  src: url('./Fonts/Neue-Haas-Grotesk-Display-Pro-75\ Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Register it in the Tailwind Theme */
+@theme {
+  /* Create a custom utility class called 'font-brand'.
+     The value matches the font-family name defined above.
+  */
+  --font-des: "desfont", "sans-serif";
+  --font-head: "headerfont", "sans-serif";
+  /* OPTIONAL: Override the default sans font 
+     (This makes it the default for the whole app)
+  */
+  /* --font-sans: "MyCustomFont", "ui-sans-serif", "system-ui"; */
+}
+
 
 .logo {
   height: 6em;

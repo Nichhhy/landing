@@ -26,8 +26,8 @@
 .teststyle
 {
   box-shadow: 0 6px 32px 0 #1e1e1e4a;
-    padding: 32px 24px;
-    background-color: var(--color-m0fg1ksw);
+    padding: 32px 32px;
+    background-color: #1A1E1E;
     width: 100%;
 
     margin: 0;
@@ -43,7 +43,7 @@
 
 .destext{
   font-family: var(--pt-mono);
-  color: var(--color-m0fg1ruf);
+
   font-weight: 400;
 
   opacity: 1;
@@ -66,10 +66,10 @@
 
 .op{
   box-shadow: none;
-  padding: 100px 5px;
+  padding: 100px 30px;
   background-color: var(--transparent);
-  width: 100%;
   border-color: var(--color-m0fg1ruf);
+
   border-width: 1px;
   border-style: solid;
   margin: 10px 15px;
@@ -182,7 +182,7 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 20px;
   border: 1px solid transparent;
 
   font-size: 1em;
