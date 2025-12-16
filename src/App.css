@@ -30,6 +30,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "textfont";
+  src: url('./Fonts/PPFraktionMono-Bold.otf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* 2. Register it in the Tailwind Theme */
 @theme {
   /* Create a custom utility class called 'font-brand'.
@@ -37,6 +45,7 @@
   */
   --font-des: "desfont", "sans-serif";
   --font-head: "headerfont", "sans-serif";
+  --font-text:"textfont", "sans-serif";
   /* OPTIONAL: Override the default sans font 
      (This makes it the default for the whole app)
   */

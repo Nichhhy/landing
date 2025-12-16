@@ -7,6 +7,7 @@ import bg2 from "./assets/bg2.webp"
 import bg3 from "./assets/bg3.webp"
 import bg4 from "./assets/bg4.webp"
 import stars2 from "./assets/whitestar.png"
+import blacklogo from "./assets/blacklogo.jpg"
 
 import stars1 from "./assets/5stars.png"
 import video1 from "./assets/video1.mp4"
@@ -86,7 +87,7 @@ const App = () => {
               {Object.entries(timeLeft).map(([unit, value]) => (
                 <div key={unit} className="flex flex-col">
                   <span className="text-[48px] leading-15 font-bold ">{value.toString().padStart(2, '0')}</span>
-                  <span className="text-[14px] destext uppercase text-gray-400 ">{unit}</span>
+                  <span className="text-[14px] font-text uppercase text-gray-400 ">{unit}</span>
                 </div>
               ))}
             </div>
@@ -121,7 +122,7 @@ const App = () => {
         <div className="  py-[15px]  mx-auto w-[85%] z-10 flex flex-col items-center text-center mb-[20px] gap-6">
 
 
-        <div className="text-[24px] destext font-bold uppercase text-white mb-8 italic">
+        <div className="text-[24px] font-text font-bold uppercase text-white mb-8 italic">
             Level Up Your Fitness
           </div>
 
@@ -158,7 +159,7 @@ const App = () => {
           </div>
  */}
 
-<div className="text-[24px] destext font-bold text-white">OFFER ENDS: <u>feb 14, 2025</u></div>
+<div className="text-[24px] font-text upper font-bold text-white">OFFER ENDS: <u>14 FEB 2026</u></div>
 <button 
             onClick={handleOpenModal}
             className="stylebutton max-w-[450px] my-[30px]"
@@ -166,7 +167,7 @@ const App = () => {
             <div className="text-[24px] font-head font-extrabold">
             CLAIM YOUR OFFER
             </div>
-            <div className="text-[14px] destext font-semibold text-[#1A1E1E]">IT WON’T LAST LONG</div>
+            <div className="text-[14px] font-text font-semibold text-[#1A1E1E]">IT WON’T LAST LONG</div>
     
           </button>
 
@@ -226,7 +227,7 @@ const App = () => {
             <div className="text-[24px] font-head font-extrabold">
             CLAIM YOUR OFFER
             </div>
-            <div className="text-[14px] destext font-semibold text-[#1A1E1E]">IT WON’T LAST LONG</div>
+            <div className="text-[14px] font-text font-semibold text-[#1A1E1E]">IT WON’T LAST LONG</div>
     
           </button>
               </div>
@@ -261,7 +262,7 @@ const App = () => {
             <div className="text-[24px] font-head font-extrabold">
             CLAIM YOUR OFFER
             </div>
-            <div className="text-[14px] destext font-semibold text-[#1A1E1E]">IT WON’T LAST LONG</div>
+            <div className="text-[14px] font-text font-semibold text-[#1A1E1E]">IT WON’T LAST LONG</div>
     
           </button>
 
@@ -308,7 +309,7 @@ const App = () => {
             <div className="text-[24px] font-head font-extrabold">
             CLAIM YOUR OFFER
             </div>
-            <div className="text-[14px] destext font-semibold text-[#1A1E1E]">IT WON’T LAST LONG</div>
+            <div className="text-[14px] font-text font-semibold text-[#1A1E1E]">IT WON’T LAST LONG</div>
     
           </button>
           </div>
@@ -329,7 +330,7 @@ const App = () => {
             <div style={{ backgroundImage: `url(${movebg})` }} className="opbg border op md:max-w-[362px] md:max-h-[362px] flex flex-col leading-10 items-start">
               <h3 className="text-[48px] bg-transparent font-head font-bold opacity-100  text-white">MOVE</h3>
               <p className="text-white font-des   text-center text-[20px] font-bold pb-[60px]">For Body Composition</p>
-              <p className="text-white destext text-[16px] font-normal">Monday, Wednesday, Friday</p>
+              <p className="text-white font-text text-[16px] font-normal">Monday, Wednesday, Friday</p>
 
             </div>
 
@@ -339,7 +340,7 @@ const App = () => {
 
               <h3 className="text-[48px] bg-transparent font-head font-bold opacity-100 text-white">PERFORM</h3>
               <p className="text-white font-des  text-center text-[20px] font-bold pb-[60px]">For Maximum Strength</p>
-              <p className="text-white destext text-[16px] font-normal">Monday, Wednesday, Friday</p>
+              <p className="text-white font-text text-[16px] font-normal">Monday, Wednesday, Friday</p>
             </div>
 
             {/* SWEAT */}
@@ -347,7 +348,7 @@ const App = () => {
 
               <h3 className="text-[48px] bg-transparent font-head font-bold opacity-100  text-white">SWEAT</h3>
               <p className="text-white font-des  text-center text-[20px] font-bold pb-[60px]">For Cardio Conditioning</p>
-              <p className="text-white destext text-[16px] font-normal">Tuesday, Thursday, Weekends</p>
+              <p className="text-white font-text text-[16px] font-normal">Tuesday, Thursday, Weekends</p>
             </div>
 
           </div>
@@ -519,7 +520,7 @@ const App = () => {
             <div className="text-[24px] font-head font-extrabold">
             CLAIM YOUR OFFER
             </div>
-            <div className="text-[14px] destext font-semibold text-[#1A1E1E]">IT WON’T LAST LONG</div>
+            <div className="text-[14px] font-text font-semibold text-[#1A1E1E]">IT WON’T LAST LONG</div>
     
           </button>
           </div>
@@ -550,26 +551,58 @@ const App = () => {
 
       {/* Modal Overlay */}
       {isModalOpen && (
-        <div className="fixed inset-0 z-[60] flex items-center justify-center px-4">
-            <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={handleCloseModal}></div>
-            <div className="relative bg-white text-black p-8 md:p-12 max-w-lg w-full shadow-2xl animate-in fade-in zoom-in duration-200 border-2 border-black">
+        <div className="fixed inset-0 z-[60] flex items-center justify-center px-4 ">
+            <div className="absolute  inset-0 bg-black/80 backdrop-blur-sm" onClick={handleCloseModal}></div>
+            <div className="relative max-h-[90vh] overflow-y-auto bg-white text-black p-8 md:p-12 max-w-lg w-full shadow-2xl animate-in fade-in zoom-in duration-200 border-2  border-black">
                 <button onClick={handleCloseModal} className="absolute top-4 right-4 text-gray-500 hover:text-black transition-colors">
                     <X size={24} />
                 </button>
                 
-                <h3 className="text-3xl font-poppins font-bold uppercase mb-2 text-center italic">Secure Your Spot</h3>
-                <p className="font-roboto text-center text-gray-600 mb-8">Enter your details below to claim this limited offer.</p>
-                
-                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                    <input type="text" placeholder="First Name" className="w-full p-4 bg-gray-50 border border-gray-300 focus:border-black focus:ring-1 focus:ring-black outline-none font-roboto transition-all" />
-                    <input type="text" placeholder="Last Name" className="w-full p-4 bg-gray-50 border border-gray-300 focus:border-black focus:ring-1 focus:ring-black outline-none font-roboto transition-all" />
-                    <input type="email" placeholder="Email Address" className="w-full p-4 bg-gray-50 border border-gray-300 focus:border-black focus:ring-1 focus:ring-black outline-none font-roboto transition-all" />
-                    <input type="tel" placeholder="Phone Number" className="w-full p-4 bg-gray-50 border border-gray-300 focus:border-black focus:ring-1 focus:ring-black outline-none font-roboto transition-all" />
-                    
-                    <button className="w-full bg-red-600 hover:bg-red-700 text-white py-4 font-poppins font-bold uppercase tracking-widest text-xl transition-all shadow-lg transform hover:-translate-y-1">
-                        CLAIM OFFER NOW
-                    </button>
-                </form>
+                <div>
+                <div className="text-[24px] font-text font-bold uppercase text-black mb-8 ">
+            Level Up Your Fitness
+          </div>
+
+          <div className="flex z-50 w-full justify-center">
+            <img src={blacklogo} alt="REVL Training" className="px-[100px]" />
+          </div>
+          
+         {/*  <div className="bg-red-600 text-white px-4 py-1 font-poppins font-bold uppercase tracking-widest text-sm mb-6 animate-pulse">
+            Limited Time Intro Offer
+          </div> */}
+
+
+          <div className="text-[56px] font-head text-center font-bold uppercase ">14 CLASSES for 
+          {" "} 
+           <em className='text-red-500'><s>$560</s></em> {" "} $140
+           
+           </div>
+
+          <div className="text-[32px] font-head text-center font-bold uppercase  text-black ">
+          That's 75% OFF
+          </div>
+                 </div> 
+
+                 <iframe
+    src="https://tiongbahru.revltraining.sg/widget/form/A1s3Do1BbFTSsPwITjZU"
+    className="w-full h-full border-none"
+    id="inline-A1s3Do1BbFTSsPwITjZU" 
+    data-layout="{'id':'INLINE'}"
+    data-trigger-type="alwaysShow"
+    data-trigger-value=""
+    data-activation-type="alwaysActivated"
+    data-activation-value=""
+    data-deactivation-type="neverDeactivate"
+    data-deactivation-value=""
+    data-form-name="sgrevltrainingpromo.com"
+    data-height="1132"
+    data-layout-iframe-id="inline-A1s3Do1BbFTSsPwITjZU"
+    data-form-id="A1s3Do1BbFTSsPwITjZU"
+    title="sgrevltrainingpromo.com"
+        >
+</iframe>
+<script src="https://tiongbahru.revltraining.sg/js/form_embed.js"></script>
+
                 
                 <p className="mt-6 text-gray-500 text-xs font-roboto text-center">
                     By submitting this form, you agree to our privacy policy.
