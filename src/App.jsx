@@ -81,13 +81,13 @@ const App = () => {
 
       {/* Top Announcement Bar */}
       <div className="timer flex flex-col items-center ">
-        <div className="flex w-full md:flex-row flex-col justify-center mt-2.5 m-auto m-w-[1170px]">
-        <div className="font-head flex text-[24px] md:w-[50%] uppercase content-center justify-center items-center">This offer ends soon. secure your spot now.</div>
-        <div className="flex justify-center gap-6 md:w-[50%] text-center font-head">
+        <div className="flex w-full md:flex-row flex-col justify-center md:mt-2.5  m-auto m-w-[1170px]">
+        <div className="font-head flex md:text-[24px] text-[14px] md:w-[50%] uppercase text-center content-center justify-center items-center">This offer ends soon. secure your spot now.</div>
+        <div className="flex justify-center gap-6 md:w-[50%] text-center font-head md:mt-0 mt-3">
               {Object.entries(timeLeft).map(([unit, value]) => (
                 <div key={unit} className="flex flex-col">
-                  <span className="text-[48px] leading-15 font-bold ">{value.toString().padStart(2, '0')}</span>
-                  <span className="text-[14px] font-text uppercase text-gray-400 ">{unit}</span>
+                  <span className="md:text-[48px] text-[32px] md:leading-15 font-bold ">{value.toString().padStart(2, '0')}</span>
+                  <span className="md:text-[14px] text-[10px] font-text uppercase text-gray-400 ">{unit}</span>
                 </div>
               ))}
             </div>
@@ -127,7 +127,7 @@ const App = () => {
           </div>
 
           <div className="flex z-50 w-full justify-center">
-            <img src={logo} alt="REVL Training" className="  max-w-[832px]" />
+            <img src={logo} alt="REVL Training" className="  md:max-w-[832px]" />
           </div>
           
          {/*  <div className="bg-red-600 text-white px-4 py-1 font-poppins font-bold uppercase tracking-widest text-sm mb-6 animate-pulse">
@@ -319,7 +319,7 @@ const App = () => {
       </section>
 
       {/* Programs Section */}
-      <section  className="py-[60px] bg-[#1A1E1E] md:px-0 px-[50px] ">
+      <section  className="py-[60px] bg-[#1A1E1E] md:px-0  ">
         <div className=" mx-auto px-4 flex flex-col items-center justify-items-center z-2">
           <h2 className="font-head text-[50px] font-bold p-5 uppercase text-center ">
             Our Programs
