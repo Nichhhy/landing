@@ -127,7 +127,7 @@ const App = () => {
           </div>
 
           <div className="flex z-50 w-full justify-center">
-            <img src={logo} alt="REVL Training" className=" min-w-[500px] max-w-[832px]" />
+            <img src={logo} alt="REVL Training" className="  max-w-[832px]" />
           </div>
           
          {/*  <div className="bg-red-600 text-white px-4 py-1 font-poppins font-bold uppercase tracking-widest text-sm mb-6 animate-pulse">
@@ -135,13 +135,13 @@ const App = () => {
           </div> */}
 
 
-          <div className="text-[64px] font-head font-bold uppercase ">14 CLASSES for 
+          <div className="text-[32px] md:text-[64px] font-head font-bold uppercase ">14 CLASSES for 
           {" "} 
            <em className='text-red-500'><s>$560</s></em> {" "} $140
            
            </div>
 
-          <div className="text-[50px] font-head font-bold uppercase  text-[#CCCCCC] ">
+          <div className="text-[28px] md:text-[50px] font-head font-bold uppercase  text-[#CCCCCC] ">
           That's 75% OFF
           </div>
 
@@ -182,7 +182,7 @@ const App = () => {
         <div className="flex-[1 1 auto] flex-col md:flex-row flex w-full ">
             {/* Text Side */}
         {/*     <div className="w-[9.4%] hidden md:flex" ></div> */}
-            <div className="px-[100px] py-[60px] md:w-[53%] w-full flex flex-col justify-center items-start ">
+            <div className="md:px-[100px] px-6 py-[60px] md:w-[53%] w-full flex flex-col justify-center items-start ">
 {/*               <h2 className="text-4xl md:text-6xl font-poppins font-bold uppercase italic leading-none mb-8">
                 Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Revl?</span>
               </h2> */}
@@ -250,7 +250,7 @@ const App = () => {
       <section className="py-[60px] bg-[#CCCABB]  text-black">
         <div className="container md:px-0 px-[50px] mx-auto text-center max-w-5xl justify-items-center">
 
-           <img src={stars1} className=" min-w-[283px] max-w-56 p-2.5" />
+           <img src={stars1} className="  max-w-56 p-2.5" />
 
 
            <h2 className="text-[32px] mt-7 font-des font-bold max-w-[1077px]">
@@ -284,7 +284,7 @@ const App = () => {
 
              {/* Right Column: Text Content */}
              <div className="px-6 py-20 md:w-[53%]  w-full flex flex-col justify-items-center items-center text-left">
-<div className="md:max-w-[558px] md:px-0 px-[100px]">
+<div className="md:max-w-[558px] px-6 md:px-0">
                 <h2 className="text-[32px] font-head font-bold uppercase  mb-5">
                   Our Community
                 </h2>
@@ -425,9 +425,9 @@ const App = () => {
       </section> */}
 
       {/* Testimonials */}
-      <section className="py-20 px-5 md:px-0 px-[100px] bg-[#D3D4D3]">
+      <section className="py-20 px-5 md:px-0  bg-[#D3D4D3]">
         <div className=" flex flex-col items-center">
-        <img src={stars1} className=" min-w-[283px] max-w-56 p-2.5" />
+        <img src={stars1} className=" max-w-56 p-2.5" />
 
 
 <h2 className="text-[32px] text-center mt-7 font-des font-bold max-w-[925px] text-black">
@@ -475,7 +475,7 @@ const App = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="bgstyle py-20  flex flex-col items-center md:px-5 px-[100px] bg-[#1A1E1E] ">
+      <section className="bgstyle py-20  flex flex-col items-center px-5 md:px-[100px] bg-[#1A1E1E] ">
         <div className="max-w-[860px]">
           <h2 className="text-[40px] font-head font-bold text-[#CCCABB] uppercase text-center mb-4">Frequently Asked Questions</h2>
           <p className="text-center text-[24px] text-white mt-4 font-des">Have questions? We've got you covered. Check out our FAQ section to find all the details you need about memberships, class schedules, and what to expect at REVL.</p>
@@ -531,7 +531,7 @@ const App = () => {
       <footer className="bg-black py-12 border-t border-zinc-900 text-center flex flex-row md:text-left">
         <div className=" mx-auto px-4 py-[100px] flex flex-col justify-between items-center gap-6">
         <div className="flex z-50 w-full justify-center">
-            <img src={logo} alt="REVL Training" className=" min-w-[200px] max-w-[350px]" />
+            <img src={logo} alt="REVL Training" className=" max-w-[350px]" />
           </div>          <div className="text-(--color-m0fg1ruf) font-roboto text-[16px] flex flex-row gap-4 md:gap-8 items-center">
             <span>© 2025 REVL Singapore | All Rights Reserved |{" "}
             <a href="#" className="hover:text-white transition-colors font-roboto text-[16px]">Terms & Conditions</a>{" "}|{" "}
@@ -559,7 +559,7 @@ const App = () => {
                 </button>
                 
                 <div>
-                <div className="text-[24px] font-text font-bold uppercase text-black mb-8 ">
+                <div className="text-[24px] font-text text-center font-bold uppercase text-black mb-8 ">
             Level Up Your Fitness
           </div>
 
