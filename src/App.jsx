@@ -2,10 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Star, ChevronDown, ChevronUp, Check, Menu, X, Instagram, Facebook, MapPin, Play } from 'lucide-react';
 import logo from "./assets/revlogo.png"
 import image1 from "./assets/image1.jpg"
-import bg1 from "./assets/bg1.webp"
-import bg2 from "./assets/bg2.webp"
-import bg3 from "./assets/bg3.webp"
-import bg4 from "./assets/bg4.webp"
 import stars2 from "./assets/whitestar.png"
 import blacklogo from "./assets/blacklogo.jpg"
 
@@ -250,10 +246,10 @@ const App = () => {
       <section className="py-[60px] bg-[#CCCABB]  text-black">
         <div className="container md:px-0 px-[50px] mx-auto text-center max-w-5xl justify-items-center">
 
-           <img src={stars1} className="  max-w-56 p-2.5" />
+           <img src={stars1} className="  md:max-w-56 p-2.5" />
 
 
-           <h2 className="text-[32px] mt-7 font-des font-bold max-w-[1077px]">
+           <h2 className="text-[32px] mt-7 font-des font-bold md:max-w-[1077px]">
            “If you want to exercise but you don’t know where to start, join REVL! it's the best thing I have done in a long time for my own physical health and mental health."           </h2>
            <button 
             onClick={handleOpenModal}
@@ -564,7 +560,7 @@ const App = () => {
           </div>
 
           <div className="flex z-50 w-full justify-center">
-            <img src={blacklogo} alt="REVL Training" className="px-[100px]" />
+            <img src={blacklogo} alt="REVL Training" className="px-[50px] " />
           </div>
           
          {/*  <div className="bg-red-600 text-white px-4 py-1 font-poppins font-bold uppercase tracking-widest text-sm mb-6 animate-pulse">
@@ -572,13 +568,13 @@ const App = () => {
           </div> */}
 
 
-          <div className="text-[56px] font-head text-center font-bold uppercase ">14 CLASSES for 
+          <div className="md:text-[56px] text-[40px] font-head text-center font-bold uppercase ">14 CLASSES for 
           {" "} 
            <em className='text-red-500'><s>$560</s></em> {" "} $140
            
            </div>
 
-          <div className="text-[32px] font-head text-center font-bold uppercase  text-black ">
+          <div className="md:text-[32px] text-[24px] font-head text-center font-bold uppercase  text-black ">
           That's 75% OFF
           </div>
                  </div> 
