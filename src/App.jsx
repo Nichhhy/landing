@@ -244,7 +244,7 @@ const App = () => {
 
       {/* Featured Testimonial Section */}
       <section className="py-[60px] bg-[#CCCABB]  text-black">
-        <div className="container md:px-0 px-6 mx-auto text-center max-w-5xl justify-items-center">
+        <div className="flex flex-col md:px-0 px-6 mx-auto text-center max-w-5xl items-center justify-items-center">
 
            <img src={stars1} className="  md:max-w-56 w-2/5 p-2.5" />
 
