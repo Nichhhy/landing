@@ -244,9 +244,9 @@ const App = () => {
 
       {/* Featured Testimonial Section */}
       <section className="py-[60px] bg-[#CCCABB]  text-black">
-        <div className="container md:px-0 px-[50px] mx-auto text-center max-w-5xl justify-items-center">
+        <div className="container md:px-0 px-6 mx-auto text-center max-w-5xl justify-items-center">
 
-           <img src={stars1} className="  md:max-w-56 p-2.5" />
+           <img src={stars1} className="  max-w-56 p-2.5" />
 
 
            <h2 className="text-[32px] mt-7 font-des font-bold md:max-w-[1077px]">
@@ -280,7 +280,7 @@ const App = () => {
 
              {/* Right Column: Text Content */}
              <div className="px-6 py-20 md:w-[53%]  w-full flex flex-col justify-items-center items-center text-left">
-<div className="md:max-w-[558px] px-6 md:px-0">
+<div className="md:max-w-[558px] md:px-0">
                 <h2 className="text-[32px] font-head font-bold uppercase  mb-5">
                   Our Community
                 </h2>
@@ -349,7 +349,7 @@ const App = () => {
 
           </div>
 
-          <p className="font-des text-[20px] max-w-[987px] font-normal w-[75%] text-white text-center py-2.5 px-[5px] mt-10">
+          <p className="font-des text-[20px] md:max-w-[987px] font-normal w-[75%] text-white text-center py-2.5 px-[5px] mt-10">
           Our sessions are taught by experienced trainers who know how to motivate and encourage you to push yourself to the next level. Always providing modifications and support as needed.                   </p>
         </div>
       </section>
@@ -530,8 +530,8 @@ const App = () => {
             <img src={logo} alt="REVL Training" className=" max-w-[350px]" />
           </div>          <div className="text-(--color-m0fg1ruf) font-roboto text-[16px] flex flex-row gap-4 md:gap-8 items-center">
             <span>© 2025 REVL Singapore | All Rights Reserved |{" "}
-            <a href="#" className="hover:text-white transition-colors font-roboto text-[16px]">Terms & Conditions</a>{" "}|{" "}
-            <a href="#" className="hover:text-white transition-colors font-roboto text-[16px]">Privacy Policy</a>
+            <a target="_blank" href="https://revltraining.com/terms-and-conditions-of-use/" className="hover:text-white transition-colors font-roboto text-[16px]">Terms & Conditions</a>{" "}|{" "}
+            <a target="_blank" href="https://revltraining.com/privacy-policy/" className="hover:text-white transition-colors font-roboto text-[16px]">Privacy Policy</a>
             </span>
           </div>
   
