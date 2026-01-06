@@ -6,8 +6,8 @@ import stars2 from "./assets/whitestar.png"
 import blacklogo from "./assets/blacklogo.jpg"
 
 import stars1 from "./assets/5stars.png"
-import video1 from "./assets/video1.mp4"
-import videohero from "./assets/videohero.mp4"
+import video1 from "./assets/revlcommunity.mov"
+import videohero from "./assets/revlherovideo.mov"
 
 import sweatbg from "./assets/sweatbg.webp"
 import movebg from "./assets/movebg.webp"
